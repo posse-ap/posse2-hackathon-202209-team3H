@@ -1,6 +1,6 @@
 const memberList = [
-  {'nameRome' : 'Yuki Nishida',
-    'nameKanji' : '西田優希',
+  {'id' : 'yuki',
+    'name' : '西田優希',
     'univ' : '早稲田大学', 
     'depart' : '教育学部', 
     'from' : '千葉県千葉市', 
@@ -8,8 +8,8 @@ const memberList = [
     'hobby' : [['スポーツ', '海外サッカー'], ['アウトドア', '海']]
   },
 
-  {'nameRome' : 'Miaki Matayoshi',
-    'nameKanji' : '又吉見秋',
+  {'id' : 'miaki',
+    'name' : '又吉見秋',
     'univ' : '早稲田大学',
     'depart' : '教育学部',
     'from' : '沖縄県',
@@ -17,8 +17,8 @@ const memberList = [
     'hobby' : [['スポーツ', 'DeNA'], ['アニメ', 'HUNTER×HUNTER'], ['ゲーム', null]]
   },
 
-  {'nameRome' : 'Haruna Nohara', 
-    'nameKanji' : '野原春菜', 
+  {'id' : 'haruna', 
+    'name' : '野原春菜', 
     'univ' : '早稲田大学', 
     'depart' : 'スポーツ科学部', 
     'from' : '岩手県盛岡市', 
