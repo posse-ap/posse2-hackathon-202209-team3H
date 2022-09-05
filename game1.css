@@ -1,0 +1,149 @@
+
+.game_top{
+  margin: 30px auto;
+  width: 80%;
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 5px #7db4e6;/*上線*/
+  border-bottom: solid 5px #7db4e6;/*下線*/
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_under_icon{
+  font-size: 20px;
+  color: #494949;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_icon{
+  font-size: 35px;
+  color: #494949;
+  display: flex;
+  justify-content: center;
+}
+
+.game_buttom{
+  height: 100px;
+}
+
+
+main{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.option_click{
+  border: solid 5px #7db4e6;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.rule_main{
+  font-size: 20px;
+  margin-top: 30px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.game1, .game2, .game3, .game4, .game5, .game6{
+  background-color: #F0F8FF;
+  width: 23vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.answer_label {
+  text-align: center;
+  padding: 10px 30px;
+  background-color:lightsteelblue;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-radius: 7px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.rule_main{
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #7db4e6;
+  font-size: 27px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.rule_detail{
+  padding: 30px;
+  font-size: 20px;
+  color:#494949 ;
+  line-height: 45px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.question_top{
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #7db4e6;
+  font-size: 28px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.question_detail{
+  padding: 30px;
+  font-size: 20px;
+  color:#494949 ;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.question_text{
+  padding: 30px;
+  font-size: 20px;
+  text-decoration: underline #7db4e6;
+  text-underline-offset: 5px;
+}
+
+.answer_label{
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.answer_text{
+  border-radius: 7px;
+  margin: 20px;
+  padding: 30px;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.question_text{
+  font-size: 23px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_container{
+  font-family: 'Kaisei Opti', serif;
+  font-size: 20px;
+}

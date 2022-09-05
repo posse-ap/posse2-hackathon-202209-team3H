@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="game1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="game_top">
+      <div class="game_icon">ゲーム</div>
+      <div class="game_under_icon">水平思考クイズ（ウミガメのスープ）</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="rule_container">
+      <div class="rule_main">
+        ルール説明
+      </div>
+    </div>
+      <div class="rule_detail">
+        <!-- 出題者が複数の回答者（ひとりでも可）に対し一見不可解な問題を出し、回答者たちは出題者に質問を投げ、それに対する“はい”、“いいえ”、“わかりません（関係ありません）”という出題者の返答から問題の答えを導き出すという推理ゲームです。 -->
+        1. 出題者が（複数人の）解答者に問題を出します<br>
+
+        2. 解答者は出題された問題について、自由に質問してください<br>
+
+        3. 出題者は「Yes」「No」「関係ありません」の3択だけで答えるのが基本となりますが、「良い質問です」など…簡単なコメントやヒントを与えても問題ありません<br>
+
+        4. 解答者は質問を繰り返して推理し、答えを導いていきましょう<br>
+
+        5. 解答者の中の誰か1人が答え（真相）を解明して当てることができれば、ゲームはクリアとなります<br>
+      </div>
+      <div class="question_top">問題</div>
+      <div class="question_detail">気になるアイコンを押してみましょう</div>
+      <div class="game_container" id="game_container"></div>
+      <div class="big_container" id="big_container"></div>
+      <div class="hidden_container" id="hidden_container"></div>
+  </main>
+
+  <footer>
+    <div class="game_buttom"></div>
+  </footer>
+  
+  <script src="game1.js"></script>
+</body>
+</html>
