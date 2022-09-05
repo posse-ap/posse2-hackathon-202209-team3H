@@ -1,0 +1,138 @@
+
+
+.game_top{
+  margin: 30px auto;
+  width: 80%;
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 5px #7db4e6;/*上線*/
+  border-bottom: solid 5px #7db4e6;/*下線*/
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_under_icon{
+  font-size: 20px;
+  color: #494949;
+  display: flex;
+  justify-content: center;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_icon{
+  font-size: 35px;
+  color: #494949;
+  display: flex;
+  justify-content: center;
+}
+
+.game_backpage{
+  right: 30px;
+}
+
+.main {
+  font-family: 'Kaisei Opti', serif;
+}
+
+.word-wolf-main{
+  margin : 0 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-wolf-player,
+.word-wolf-game-setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.word-wolf-player-setting {
+  font-size: x-large;
+  display: flex;
+}
+
+.word-wolf-cursor {
+  cursor: pointer;
+}
+
+.word-wolf-player-lists {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.word-wolf-player-input {
+  display: block;
+}
+
+.word-wolf-game-setting-divide-people {
+  display: flex;
+  gap: 10%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.word-wolf-theme {
+  font-size: x-large;
+  display: flex;
+}
+
+.word-wolf-talk-time {
+  font-size: x-large;
+  display: flex;
+}
+
+.word-wolf-start-button {
+  width: 30%;
+  background-color: #7db4e6;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.word-wolf-card-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 10%;
+}
+
+.word-wolf-card-box {
+  width: 25%;
+}
+.word-wolf-card {
+  padding: 100px 0;
+  background-color: #7db4e6;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.word-wolf-memorize-theme {
+  display: block;
+  margin: 0 auto;
+}
+
+.word-wolf-discussion-start-button {
+  margin: 20px auto;
+  display: block;
+  width: 30%;
+  background-color: #7db4e6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.word-wolf-result {
+  text-align: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/wordWolf.css">
+  <script src="./js/wordWolf.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="game_top">
+      <div class="game_icon">ゲーム</div>
+      <div class="game_under_icon">ワードウルフ</div>
+      <a href="./index.html" class="game_backpage">戻る</a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="word-wolf-player">
+      <h1>プレイヤー設定</h1>
+      <h2>～人数～</h2>
+      <div class="word-wolf-player-setting">
+        <div id="wordWolfDecreaseMember" class="word-wolf-cursor">◀</div>
+        <div id="wordWolfPlayerNum">3</div>
+        <div id="wordWolfIncreaseMember" class="word-wolf-cursor">▶</div>
+      </div>
+      <div id="wordWolfPlayerLists" class="word-wolf-player-lists"></div>
+    </div>
+    <div class="word-wolf-game-setting">
+      <h1>ゲーム設定</h1>
+      <h2>～人数構成～</h2>
+      <div class="word-wolf-game-setting-divide-people">
+        <div>
+          <p>市民(多数派)</p>
+          <div id="wordWolfGameCitizen">2</div>
+          <div id="wordWolfGameSettingIncreaseCitizen" class="word-wolf-cursor">◀</div>
+        </div>
+        <div>
+          <p>ウルフ（小数派）</p>
+          <div id="wordWolfGameWolf">1</div>
+          <div id="wordWolfGameSettingIncreaseWolf" class="word-wolf-cursor">▶</div>
+        </div>
+      </div>
+      <h2>～お題カテゴリー～</h2>
+      <div class="word-wolf-theme">
+        <div id="wordWolfThemeBefore" class="word-wolf-cursor">◀</div>
+        <div id="wordWolfTheme">スポーツ</div>
+        <div id="wordWolfThemeAfter" class="word-wolf-cursor">▶</div>
+      </div>
+      <h2>～トーク時間（分）～</h2>
+      <div class="word-wolf-talk-time">
+        <div id="wordWolfDecreaseTalkTime" class="word-wolf-cursor">◀</div>
+        <div id="wordWolfTalkTime">3</div>
+        <div id="wordWolfIncreaseTalkTime" class="word-wolf-cursor">▶</div>
+      </div>
+    </div>
+    <button class="word-wolf-start-button" id="wordWolfDisplayCard">設定完了！<br>お題表示へ</button>
+    <div id="wordWolfCardWrapper"></div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
