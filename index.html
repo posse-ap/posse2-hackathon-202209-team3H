@@ -4,37 +4,150 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>サービス名</title>
+  <title></title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/sample.js" defer></script>
+  <link rel="stylesheet" href="./css/layout.css">
+  <script src="./js/information.js" defer></script>
+  <script src="./js/hobby.js" defer></script>
+  <script src="./js/modal.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+  <script src="./js/scroll.js"></script>
 </head>
 
-
-<body>
-  <header>
-    <img src="./img/logo.svg" alt="logo">
-
-
+<body class="body" id="body">
+  <header class="header">
+    <div class="top">
+      <div class="page-logo">
+        <img class="logo" src="./img/logo.svg">
+        <img class="two" src="./img/two.jpg">
+        <img class="three" src="./img/three.jpg">
+        <p class="rd">rd</p>
+      </div>
+      <ul class="page-link" id="page-link">
+        <li><a href="#friends">お友達</a></li>
+        <li><a href="#same">同じとこ探し</a></li>
+        <li><a href="#games">ゲーム</a></li>
+      </ul>
+      <img class="sticker" src="./img/posse2.png">
+    </div>
   </header>
 
   <main class="back-ground">
+    <img class="big-picture" src="./img-slideshow/big picture.jpg" alt="集合写真">
+    <div class="title">
+      <h2 class="title-main">FOCUS!</h2>
+      <h2 class="title-sub">~同期となかよくなろう~</h2>
+    </div>
     <div class="main">
-      <section>
-        <p>あー</p>
+      <section class="section1" id="friends">
+        <h2 class="friends">お友達</h2>
+        <h4 class="friends-text">写真をクリックしてみんなのことを知ろう！<br>意外な一面が見れるかも、、、</h4>
+        <div class="wrap slide-paused" ontouchstart="">
+          <ul class="slideshow">
+            <li><img class="content content-hover" src="./img-slideshow/yuki.jpg" id="yukiSlideshow">Yuki Nishida</li>
+            <li><img class="content content-hover" src="./img-slideshow/miaki.jpg" id="miakiSlideshow">Miaki Matayoshi</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruna.jpg" id="harunaSlideshow">Haruna Nohara</li>
+            <li><img class="content content-hover" src="./img-slideshow/koshiro.jpg" id="koshiroSlideshow">Koshiro Ino</li>
+            <li><img class="content content-hover" src="./img-slideshow/minori.jpg" id="minoriSlideshow">Minori Hiki</li>
+            <li><img class="content content-hover" src="./img-slideshow/masaki.jpg" id="masakiSlideshow">Masaki Masui</li>
+            <li><img class="content content-hover" src="./img-slideshow/keisuke.jpg" id="keisukeSlideshow">Keisuke Tominaga</li>
+            <li><img class="content content-hover" src="./img-slideshow/sumika.jpg" id="sumikaSlideshow">Sumika Tominaga</li>
+            <li><img class="content content-hover" src="./img-slideshow/asuna.jpg" id="asunaSlideshow">Asuna Higashi</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruki.jpg" id="harukiSlideshow">Haruki Motomura</li>
+            <li><img class="content content-hover" src="./img-slideshow/makoto.jpg" id="makotoSlideshow">Makoto Jinbo</li>
+            <li><img class="content content-hover" src="./img-slideshow/ryusei.jpg" id="ryuseiSlideshow">Ryusei Ito</li>
+            <li><img class="content content-hover" src="./img-slideshow/mayu.jpg" id="mayuSlideshow">Mayu Ogushi</li>
+            <li><img class="content content-hover" src="./img-slideshow/kota.jpg" id="kotaSlideshow">Kohta Kochi</li>
+            <li><img class="content content-hover" src="./img-slideshow/yuuna.jpg" id="yuunaSlideshow">Yuna Kawamura</li>
+            <li><img class="content content-hover" src="./img-slideshow/kodai.jpg" id="kodaiSlideshow">Kodai Utsumi</li>
+            <li><img class="content content-hover" src="./img-slideshow/katsuki.jpg" id="katsukiSlideshow">Katsuki Hashimoto</li>
+            <li><img class="content content-hover" src="./img-slideshow/yamato.jpg" id="yamatoSlideshow">Yamato Kishita</li>
+            <li><img class="content content-hover" src="./img-slideshow/jei.jpg" id="jeiSlideshow">Jey Hirosawa</li>
+            <li><img class="content content-hover" src="./img-slideshow/mayuko.jpg" id="mayukoSlideshow">Mayuko Naito</li>
+            <li><img class="content content-hover" src="./img-slideshow/yurie.jpg" id="yurieSlideshow">Yurie Tanaka</li>
+            <li><img class="content content-hover" src="./img-slideshow/ayahiro.jpg" id="ayahiroSlideshow">Ayahiro Inatsugu</li>
+            <li><img class="content content-hover" src="./img-slideshow/sara.jpg" id="saraSlideshow">Sara Hukuda</li>
+            <li><img class="content content-hover" src="./img-slideshow/seiya.jpg" id="seiyaSlideshow">Seiya Tagami</li>
+            <li><img class="content content-hover" src="./img-slideshow/chihiro.jpg" id="chihiroSlideshow">Chihiro Murakami</li>
+            <li><img class="content content-hover" src="./img-slideshow/ryo.jpg" id="ryoSlideshow">Ryo Ikegata</li>
+            <li><img class="content content-hover" src="./img-slideshow/yuna.jpg" id="yunaSlideshow">Yuna Hirokawa
+            <li><img class="content content-hover" src="./img-slideshow/yu.jpg" id="yuSlideshow">Yu Takeuchi</li>
+            <li><img class="content content-hover" src="./img-slideshow/ukyo.jpg" id="ukyoSlideshow">Ukyo Nawano</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruka.jpg" id="harukaSlideshow">Haruka Matsumoto</li>
+            <li><img class="content content-hover" src="./img-slideshow/kaki.jpg" id="kakiSlideshow">Kaki Bai</li>
+            <li><img class="content content-hover" src="./img-slideshow/atsuhiro.jpg" id="atsuhiroSlideshow">Atsuhiro Nakai</li>
+            <li><img class="content content-hover" src="./img-slideshow/takumi.jpg" id="takumiSlideshow">Takumi Hara</li>
+          </ul>
+          <ul class="slideshow">
+            <li><img class="content content-hover" src="./img-slideshow/yuki.jpg" id="yukiSlideshow">Yuki Nishida</li>
+            <li><img class="content content-hover" src="./img-slideshow/miaki.jpg" id="miakiSlideshow">Miaki Matayoshi</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruna.jpg" id="harunaSlideshow">Haruna Nohara</li>
+            <li><img class="content content-hover" src="./img-slideshow/koshiro.jpg" id="koshiroSlideshow">Koshiro Ino</li>
+            <li><img class="content content-hover" src="./img-slideshow/minori.jpg" id="minoriSlideshow">Minori Hiki</li>
+            <li><img class="content content-hover" src="./img-slideshow/masaki.jpg" id="masakiSlideshow">Masaki Masui</li>
+            <li><img class="content content-hover" src="./img-slideshow/keisuke.jpg" id="keisukeSlideshow">Keisuke Tominaga</li>
+            <li><img class="content content-hover" src="./img-slideshow/sumika.jpg" id="sumikaSlideshow">Sumika Tominaga</li>
+            <li><img class="content content-hover" src="./img-slideshow/asuna.jpg" id="asunaSlideshow">Asuna Higashi</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruki.jpg" id="harukiSlideshow">Haruki Motomura</li>
+            <li><img class="content content-hover" src="./img-slideshow/makoto.jpg" id="makotoSlideshow">Makoto Jinbo</li>
+            <li><img class="content content-hover" src="./img-slideshow/ryusei.jpg" id="ryuseiSlideshow">Ryusei Ito</li>
+            <li><img class="content content-hover" src="./img-slideshow/mayu.jpg" id="mayuSlideshow">Mayu Ogushi</li>
+            <li><img class="content content-hover" src="./img-slideshow/kota.jpg" id="kotaSlideshow">Kohta Kochi</li>
+            <li><img class="content content-hover" src="./img-slideshow/yuuna.jpg" id="yuunaSlideshow">Yuna Kawamura</li>
+            <li><img class="content content-hover" src="./img-slideshow/kodai.jpg" id="kodaiSlideshow">Kodai Utsumi</li>
+            <li><img class="content content-hover" src="./img-slideshow/katsuki.jpg" id="katsukiSlideshow">Katsuki Hashimoto</li>
+            <li><img class="content content-hover" src="./img-slideshow/yamato.jpg" id="yamatoSlideshow">Yamato Kishita</li>
+            <li><img class="content content-hover" src="./img-slideshow/jei.jpg" id="jeiSlideshow">Jey Hirosawa</li>
+            <li><img class="content content-hover" src="./img-slideshow/mayuko.jpg" id="mayukoSlideshow">Mayuko Naito</li>
+            <li><img class="content content-hover" src="./img-slideshow/yurie.jpg" id="yurieSlideshow">Yurie Tanaka</li>
+            <li><img class="content content-hover" src="./img-slideshow/ayahiro.jpg" id="ayahiroSlideshow">Ayahiro Inatsugu</li>
+            <li><img class="content content-hover" src="./img-slideshow/sara.jpg" id="saraSlideshow">Sara Hukuda</li>
+            <li><img class="content content-hover" src="./img-slideshow/seiya.jpg" id="seiyaSlideshow">Seiya Tagami</li>
+            <li><img class="content content-hover" src="./img-slideshow/chihiro.jpg" id="chihiroSlideshow">Chihiro Murakami</li>
+            <li><img class="content content-hover" src="./img-slideshow/ryo.jpg" id="ryoSlideshow">Ryo Ikegata</li>
+            <li><img class="content content-hover" src="./img-slideshow/yuna.jpg" id="yunaSlideshow">Yuna Hirokawa
+            <li><img class="content content-hover" src="./img-slideshow/yu.jpg" id="yuSlideshow">Yu Takeuchi</li>
+            <li><img class="content content-hover" src="./img-slideshow/ukyo.jpg" id="ukyoSlideshow">Ukyo Nawano</li>
+            <li><img class="content content-hover" src="./img-slideshow/haruka.jpg" id="harukaSlideshow">Haruka Matsumoto</li>
+            <li><img class="content content-hover" src="./img-slideshow/kaki.jpg" id="kakiSlideshow">Kaki Bai</li>
+            <li><img class="content content-hover" src="./img-slideshow/atsuhiro.jpg" id="atsuhiroSlideshow">Atsuhiro Nakai</li>
+            <li><img class="content content-hover" src="./img-slideshow/takumi.jpg" id="takumiSlideshow">Takumi Hara</li>
+            </ul>
+        </div>
+      </section>
+      <section id="same">
+        <h2 class="same">同じとこ探し</h2>
+        <h4 class="searchSamePoint">
+          共通点のある友達を探してみよう！<br>複数選択可！下まであるのでスクロールしてね！！
+        </h4>
+        <div class="reserch">
+          Reserch...
+        </div>
+        <div class="base">
+          <div class="baseLeft">
+            <div class="focus_square">
+              <input type="text" class="search" placeholder="絞り込む" id = "search" >
+              <div class="border"></div>
+              <div id ="searchListBox" class="searchListBox"></div>
+            </div>
+            <div class="resultBox" id="resultBox"></div>
+          </div>
+          <div class="ResearchResult" id="searchResult">
+          </div>     
+        </div>
       </section>
       <section>
-
       </section>
       <section>
         <a href="game1.html"></a>
       </section>
     </div>
   </main>
-
   <footer>
 
   </footer>
 </body>
-
 </html>
