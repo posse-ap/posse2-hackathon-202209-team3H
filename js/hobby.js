@@ -43,7 +43,7 @@ for (let num = 0; num < searchList.length ; num++) {
     if (canSee == false) {
       // クリックされていないとき
       let selectCheck = '<div id="' + searchListEnglish[num] + 'Clicked" class="searchList" >' + searchList[num] 
-      + '<span id="' + searchListEnglish[num] + 'Disappear" class = "batsu">✖︎</span>' 
+      + '<span id="' + searchListEnglish[num] + 'Disappear" class = "batten">✖︎</span>' 
       + '</div>';
       resultBox.insertAdjacentHTML('beforeend', selectCheck);
       canSee = true;

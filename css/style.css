@@ -1,3 +1,7 @@
+.big-picture{
+  width: 100%;
+}
+
 .main{
   margin : 0 15%;
 }
@@ -60,7 +64,7 @@ input[type=checkbox] {
   padding: 8px 10px 0px 5px;
   border-radius: 5%;
 }
-.batsu{
+.batten{
   width: 10px;
   height: 10px;
   color: white;
@@ -85,3 +89,159 @@ input[type=checkbox] {
   margin-left: 2%;
   border-radius: 10px;
 } 
+
+.friends{
+  margin-top: 10%;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends::before{
+  border-top: 3px solid;
+  content: "";
+  width: 40%;
+  margin-right: 1em;
+}
+
+.friends::after {
+  border-top: 3px solid;
+  content: "";
+  width: 40%;
+  margin-left: 1em;
+}
+
+.wrap{
+  display: flex;
+  overflow: hidden;
+}
+
+.slide-paused:hover .slideshow {
+  animation-play-state: paused;
+}
+
+.slideshow {
+  display: flex;
+  animation: loop-slide 50s infinite linear 1s both;
+  gap: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  height: 300px;
+  border-radius: 10%;
+  display: block;
+}
+
+.content-hover {
+    transition: all 0.2s;
+}
+.content-hover:hover {
+    transform: translateY(-20px);
+    border-radius: 0 10%;
+    box-shadow: 0 3px 10px 0 #333;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+.same{
+  margin-top: 20%;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.same::before{
+  border-top: 1px solid;
+  content: "";
+  width: 35%;
+  margin-right: 1em;
+}
+  
+.same::after{
+  border-top: 1px solid;
+  content: "";
+  width: 35%;
+  margin-left: 1em;
+}
+
+.white{
+  background-color: #ffffff;
+  width: 60vw;
+  height: 70vh;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+  border-radius: 4%;
+  background-image: url(../img/posse2.png);
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: right 10% bottom 10%;
+}
+
+.gray{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+}
+
+.batsu{
+  width: 3vw;
+  height: 6vh;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+.photo{
+  height: 60vh;
+  object-fit: contain;
+  margin-top: 5vh;
+  margin-left: 10vh;
+  border-radius: 8%;
+  
+}
+
+.info{
+  margin-top: -45%;
+  margin-left: 50%;
+  height: 30vh;
+}
+
+.name{
+
+}
+
+.univ{
+
+}
+
+.from{
+
+}
+
+.birthday{
+
+}
+
+.hobby{
+
+}
