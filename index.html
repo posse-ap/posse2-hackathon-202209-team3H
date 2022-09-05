@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/information.js" defer></script>
-  <script src="./js/sample.js" defer></script>
   <script src="./js/hobby.js" defer></script>
   <script src="./js/modal.js" defer></script>
 </head>
@@ -62,22 +61,27 @@
         </div>
       </section>
       <section>
-      <div class="reserch">
-        Reserch...
-      </div>
-      <div class="base">
-        <div class="focus_square">
-          <input type="text" class="search" placeholder="絞り込む" id = "search" >
-          <div class="border"></div>
-          <div id ="searchListBox" class="searchListBox"></div>
+        <h2 class="same">同じとこ探し</h2>
+        <h4 class="searchSamePoint">
+          共通点のある友達を探してみよう！<br>複数選択可！下まであるのでスクロールしてね！！
+        </h4>
+        <div class="reserch">
+          Reserch...
         </div>
-        <div class="ResearchResult"></div>     
-      </div>
+        <div class="base">
+          <div class="focus_square">
+            <input type="text" class="search" placeholder="絞り込む" id = "search" >
+            <div class="border"></div>
+            <div id ="searchListBox" class="searchListBox"></div>
+          </div>
+          <div class="ResearchResult" id="searchResult">
+            
+          </div>     
+        </div>
       
       <div class="resultBox" id="resultBox"></div>
       </section>
       <section>
-        <h2 class="same">同じとこ探し</h2>
       </section>
     </div>
   </main>

@@ -17,8 +17,8 @@
 // }
 // console.log(searchList)
 
-const searchList = ['スポーツ', '音楽', 'アニメ', '銭湯','旅行','野球','サッカー','麻雀','k-pop','メイク','犬','ゲーム','j-pop','プログラミング','YouTube', ];
-const searchListEnglish = ['sport', 'music', 'anime', 'sento','trip','baseball','soccer','mahjong','k-pop','Make up','dog','game','j-pop','programming' ];
+const searchList = ['スポーツ','アウトドア','アニメ','ゲーム','写真','ドラマ','書道','バイト','音楽','食べ物','娯楽','ディズニー','漫画','YouTube','映画',];
+const searchListEnglish = ['sport','outdoor','anime','game','photo','drama','calligraphy','PartTimeJob','music', 'food' ,'entertainment','disney','manga','YouTube','movie'];
 
 const searchListBox = document.getElementById('searchListBox');
 // console.log(searchListBox)
@@ -30,6 +30,44 @@ for (let num = 0; num < searchList.length ; num++) {
 
   // searchListBox.insertAdjacentHTML('beforeend', '<div class = "ro"><label for="anime"><input type="checkbox" id="sportSearchList">' + searchList[num] + '</label></div>');
 
+}
+
+// 写真を表示
+let checkedList = [];
+function displayPicture(id, searchListJa) {
+
+  // チェックされているidをcheckedListにまとめる
+  const choiceId = document.getElementById(id)
+  if (choiceId.checked) {
+    checkedList.push(searchListJa);
+  } else {
+    const index = checkedList.indexOf(searchListJa);
+    checkedList.splice(index, 1);
+  }
+
+  // checkedListにあるidを全て持つ人のみを表示
+  let hasHobbyMemberLists = [];
+  checkedList.forEach(element => {
+    for (let memberLength = 0; memberLength < memberList.length; memberLength++) {
+      for (let hobbyNum = 0; hobbyNum < memberList[memberLength].hobby.length; hobbyNum++) {
+        // その人がcheckedListにあるidの趣味を持っているか
+        if (element === memberList[memberLength].hobby[hobbyNum][0]) {
+          hasHobbyMemberLists.push(memberList[memberLength].id);
+        }
+      }
+    }
+  })
+  console.log(hasHobbyMemberLists)
+
+  // 写真を並べる
+  let photoLists = ``;
+  for (let memberNum = 0; memberNum < hasHobbyMemberLists.length; memberNum++) {
+    photoLists += `<img src="./img-slideshow/` + hasHobbyMemberLists[memberNum] + `.jpg" class = "imgEveryone">`
+  }
+
+  const searchResult = document.getElementById('searchResult');
+  searchResult.innerHTML = '';
+  searchResult.insertAdjacentHTML('beforeend', photoLists);
 }
 
 
@@ -64,8 +102,12 @@ for (let num = 0; num < searchList.length ; num++) {
         // チェックボックスのチェックを外す
         document.querySelector("input[type='checkbox'][value='" + searchListEnglish[num] + "']").checked = false;
         canSee = false;
+
+        displayPicture(searchListEnglish[num] + 'SearchList', searchList[num]);
       })
     }
+
+    displayPicture(searchListEnglish[num] + 'SearchList', searchList[num]);
   });
 
   function inputChange(event) {
