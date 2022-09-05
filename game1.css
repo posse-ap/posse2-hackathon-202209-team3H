@@ -23,10 +23,13 @@
   justify-content: center;
 }
 
-.game_buttom{
+.game_button{
   height: 100px;
 }
 
+.game_backpage{
+  right: 30px;
+}
 
 main{
   margin: 0 auto;
