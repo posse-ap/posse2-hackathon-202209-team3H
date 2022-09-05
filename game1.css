@@ -1,0 +1,99 @@
+main{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.option_click{
+  border: solid 5px #7db4e6;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.rule_main{
+  font-size: 20px;
+}
+
+.game_main{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.game1, .game2, .game3, .game4, .game5, .game6{
+  background-color: #F0F8FF;
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.answer_label {
+  text-align: center;
+  padding: 10px 30px;
+  background-color:lightsteelblue;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-radius: 7px;
+}
+
+.rule_main{
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  font-size: 30px;
+}
+
+.rule_detail{
+  padding: 30px;
+  font-size: 20px;
+  color:#494949 ;
+  line-height: 45px;
+}
+
+.question_top{
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  font-size: 30px;
+}
+
+.question_detail{
+  padding: 30px;
+  font-size: 20px;
+  color:#494949 ;
+}
+
+.question_text{
+  padding: 30px;
+  font-size: 20px;
+}
+
+.answer_label{
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.answer_text{
+  border-radius: 7px;
+  margin: 20px;
+  padding: 30px;
+  font-size: 20px;
+  background-color: aliceblue;
+}
