@@ -1,35 +1,12 @@
 'use strict';
 
-// console.log(memberList);
-// console.log(memberList[0]);
-// console.log(memberList[0].hobby);
-// console.log(memberList[0].hobby[0]);
-// console.log(memberList[0].hobby[0][0]);
-// console.log(memberList[0].hobby[1][0]);
-
-// console.log(memberList.length)
-
-// let searchList = [];
-// for (let num = 1; num <= memberList.length ; num++) {
-//   console.log(memberList[0].hobby[1][0]);
-//   // console.log(num);
-//   searchList[num-1] = memberList[num-1].hobby[1][0];
-// }
-// console.log(searchList)
-
 const searchList = ['スポーツ','アウトドア','アニメ','ゲーム','写真','ドラマ','書道','バイト','音楽','食べ物','娯楽','ディズニー','漫画','YouTube','映画',];
 const searchListEnglish = ['sport','outdoor','anime','game','photo','drama','calligraphy','PartTimeJob','music', 'food' ,'entertainment','disney','manga','YouTube','movie'];
 
 const searchListBox = document.getElementById('searchListBox');
-// console.log(searchListBox)
 
 for (let num = 0; num < searchList.length ; num++) {
-  // console.log(num)
-  // console.log(searchList[num])
   searchListBox.insertAdjacentHTML('beforeend', '<div class = "ro" id="'+ searchListEnglish[num] +'Log"><label for="anime"><input type="checkbox" id="' + searchListEnglish[num] + 'SearchList" value="' + searchListEnglish[num] + '">' + searchList[num] + '</label></div>');
-
-  // searchListBox.insertAdjacentHTML('beforeend', '<div class = "ro"><label for="anime"><input type="checkbox" id="sportSearchList">' + searchList[num] + '</label></div>');
-
 }
 
 // 写真を表示
@@ -57,7 +34,6 @@ function displayPicture(id, searchListJa) {
       }
     }
   })
-  console.log(hasHobbyMemberLists)
 
   // 写真を並べる
   let photoLists = ``;
@@ -122,6 +98,3 @@ for (let num = 0; num < searchList.length ; num++) {
   const search = document.getElementById('search');
   search.addEventListener('change', inputChange);
 }
-
-
-

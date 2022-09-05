@@ -33,14 +33,10 @@ if (clickCount ==0){
   gamePage.classList.add('option_click')
   let mainBox = `<div class="main_container" id="main_container">`
   mainBox+=`<div class="question_container">`
-  // +`<div class="question_label">問題${gameNumber}</div>`
   +`<div class="question_text">${gameList[gameNumber-1].question}</div>`
   +`</div>`
   +`</div>`
-  // +`<div class="answer_container">`
   +`<div class="answer_label" id="answer_label${gameList[gameNumber-1].selectNumber}">答えを見る</div>`
-  // +`<div class="answer_text">${gameList[gameNumber-1].answer}</div>`
-  // +`</div>`;
 
   const allMainBox=document.getElementById('big_container');
   allMainBox.insertAdjacentHTML('beforeend', mainBox);
