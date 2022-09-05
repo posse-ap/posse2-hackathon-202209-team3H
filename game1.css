@@ -1,8 +1,7 @@
 
 .game_top{
-  margin: 0 auto;
-  width: 80%;;
-  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
   padding: 0.5em 0;/*上下の余白*/
   border-top: solid 5px #7db4e6;/*上線*/
   border-bottom: solid 5px #7db4e6;/*下線*/
