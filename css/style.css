@@ -1,3 +1,87 @@
 .main{
   margin : 0 15%;
 }
+.reserch{
+  width: 10%; 
+  border: 1px solid black;
+  border-radius: 20px;
+  padding:3px 10px;
+}
+
+.focus_square{
+  width: 50%;
+  height: 311px;
+  border: 1px solid black;
+  margin-top: 0.1px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.border{
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 0.5px solid black;
+}
+.search{
+  width: 96%;
+  font-size: large;
+  padding:5px 5px;
+  margin: 5px auto 0 auto;
+  display: block; 
+}
+.searchListBox {
+display: flex;
+flex-direction: column;
+gap: 33px;
+font-size: 25px;
+padding:17px 0px 5px 10px;
+}
+
+/* .searchListBox [type="checkbox"] {
+  width: 100px;
+} */
+input[type=checkbox] {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.resultBox{
+  width: 49%;
+  border: 1px solid black;
+  margin-top: 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 17px 0px 17px 1%;
+}
+.searchList{
+  background-color: #d9d9d9;
+  height: 27px;
+  padding: 8px 10px 0px 5px;
+  border-radius: 5%;
+}
+.batsu{
+  width: 10px;
+  height: 10px;
+  color: white;
+  margin-left: 7px;
+  border: 1px solid black;
+  padding: 3px 4.915px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.displayNone {
+  display: none;
+}
+
+.base{
+  display: flex;
+}
+
+.ResearchResult{
+  width: 47%;
+  border: 1px solid black;
+  margin-left: 2%;
+  border-radius: 10px;
+} 

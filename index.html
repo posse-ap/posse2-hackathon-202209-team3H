@@ -7,7 +7,9 @@
   <title>サービス名</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/information.js" defer></script>
   <script src="./js/sample.js" defer></script>
+  <script src="./js/hobby.js" defer></script>
 </head>
 
 
@@ -24,7 +26,19 @@
         <p>あー</p>
       </section>
       <section>
-
+      <div class="reserch">
+        Reserch...
+      </div>
+      <div class="base">
+        <div class="focus_square">
+          <input type="text" class="search" placeholder="絞り込む" id = "search" >
+          <div class="border"></div>
+          <div id ="searchListBox" class="searchListBox"></div>
+        </div>
+        <div class="ResearchResult"></div>     
+      </div>
+      
+      <div class="resultBox" id="resultBox"></div>
       </section>
     </div>
   </main>
