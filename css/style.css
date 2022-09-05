@@ -10,10 +10,11 @@
   border: 1px solid black;
   border-radius: 20px;
   padding:3px 10px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .focus_square{
-  width: 50%;
+  width: 100%;
   height: 311px;
   border: 1px solid black;
   margin-top: 0.1px;
@@ -31,6 +32,8 @@
   padding:5px 5px;
   margin: 5px auto 0 auto;
   display: block; 
+  font-family: 'Kaisei Opti', serif;
+
 }
 .searchListBox {
 display: flex;
@@ -40,16 +43,14 @@ font-size: 25px;
 padding:17px 0px 5px 10px;
 }
 
-/* .searchListBox [type="checkbox"] {
-  width: 100px;
-} */
 input[type=checkbox] {
   width: 26px;
   height: 26px;
   vertical-align: middle;
+
 }
 .resultBox{
-  width: 49%;
+  width: 100%;
   border: 1px solid black;
   margin-top: 1px;
   border-radius: 10px;
@@ -63,6 +64,7 @@ input[type=checkbox] {
   height: 27px;
   padding: 8px 10px 0px 5px;
   border-radius: 5%;
+  font-family: 'Kaisei Opti', serif;
 }
 .batten{
   width: 10px;
@@ -81,10 +83,14 @@ input[type=checkbox] {
 
 .base{
   display: flex;
+  width: 100%;
+}
+.baseLeft{
+  width: 50%;
 }
 
 .ResearchResult{
-  width: 47%;
+  width: 50%;
   height: 313px;
   border: 1px solid black;
   margin-left: 2%;
@@ -104,6 +110,10 @@ input[type=checkbox] {
 } 
 .searchSamePoint{
   text-align: center;
+  font-family: 'Kaisei Opti', serif;
+}
+.ro{
+  font-family: 'Kaisei Opti', serif;
 }
 
 
@@ -178,6 +188,8 @@ input[type=checkbox] {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Kaisei Opti', serif;
+
 }
   
 .same::before{
@@ -185,6 +197,8 @@ input[type=checkbox] {
   content: "";
   width: 35%;
   margin-right: 1em;
+  font-family: 'Kaisei Opti', serif;
+
 }
   
 .same::after{
@@ -192,6 +206,8 @@ input[type=checkbox] {
   content: "";
   width: 35%;
   margin-left: 1em;
+  font-family: 'Kaisei Opti', serif;
+
 }
 
 .white{
