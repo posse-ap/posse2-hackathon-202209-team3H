@@ -594,4 +594,67 @@ input[type=checkbox] {
     display: none;
   }
   
+  .same{
+    font-size: 19px;
+  }
+  .same::before{
+    width: 20%;
+  }
+  .same::after{
+    width: 20%;
+  }
+  .searchSamePoint{
+    font-size: 11px;
+  }
+  .reserch {
+    width: 26%;
+  }
+  .base{
+    flex-direction: column;
+  }
+  .baseLeft{
+    width: 100%;
+  }
+  .ResearchResult{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .search{
+    width: 91%;
+    font-size: 10px;
+  }
+  .focus_square{
+    height: 164px;
+  }
+  .resultBox{
+    
+  }
+  .ResearchResult{
+    height: 164px;
+  }
+  .reserch{
+    font-size: small;
+  }
+  .ro{
+    font-size: 11px;
+  }
+  input[type=checkbox] {
+    width: auto;
+    height: auto;
+  }
+  .searchListBox{
+    gap: 24px;
+    padding: 16px 0px 16px 7px;
+  }
+  .searchList{
+    font-size: 11px;
+    height: 20px;
+  }
+  .resultBox{
+    padding: 3% 0% 3% 3%;
+    width: 97%;
+  }
+  .imgEveryone{
+    margin: 18px;
+  }
 }

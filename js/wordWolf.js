@@ -119,7 +119,6 @@
     wordWolfTheme.innerText = themeLists[wordWolfIndex];
   })
 
-
   // トーク時間
   const wordWolfDecreaseTalkTime = document.getElementById('wordWolfDecreaseTalkTime');
   wordWolfDecreaseTalkTime.addEventListener('click', () => {
@@ -198,10 +197,8 @@
             + `<div>「${wordWolfQuestion[wordWolfIndex][0]}」</div>`
             + `</div>`
             card.innerHTML = yourTheme;
-              
             }
             
-
             const memorizeButton = `<button class="word-wolf-memorize-theme" id="wordWolfMemorizeTheme">覚えた！</button>`
             document.getElementById('wordWolfCardBox' + cardCount).insertAdjacentHTML('beforeend', memorizeButton)
             canSeeTheme = true;
