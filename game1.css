@@ -5,6 +5,7 @@
   padding: 0.5em 0;/*上下の余白*/
   border-top: solid 5px #7db4e6;/*上線*/
   border-bottom: solid 5px #7db4e6;/*下線*/
+  font-family: 'Kaisei Opti', serif;
 }
 
 .game_under_icon{
@@ -12,6 +13,7 @@
   color: #494949;
   display: flex;
   justify-content: center;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .game_icon{
@@ -49,6 +51,7 @@ main{
 .rule_main{
   font-size: 20px;
   margin-top: 30px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .game_main{
@@ -76,6 +79,7 @@ main{
   text-decoration: none;
   color: black;
   border-radius: 7px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .rule_main{
@@ -84,6 +88,7 @@ main{
   background: transparent;
   border-left: solid 5px #7db4e6;
   font-size: 27px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .rule_detail{
@@ -91,6 +96,7 @@ main{
   font-size: 20px;
   color:#494949 ;
   line-height: 45px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .question_top{
@@ -99,12 +105,14 @@ main{
   background: transparent;
   border-left: solid 5px #7db4e6;
   font-size: 28px;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .question_detail{
   padding: 30px;
   font-size: 20px;
   color:#494949 ;
+  font-family: 'Kaisei Opti', serif;
 }
 
 .question_text{
@@ -127,4 +135,15 @@ main{
   padding: 30px;
   font-size: 20px;
   background-color: aliceblue;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.question_text{
+  font-size: 23px;
+  font-family: 'Kaisei Opti', serif;
+}
+
+.game_container{
+  font-family: 'Kaisei Opti', serif;
+  font-size: 20px;
 }
