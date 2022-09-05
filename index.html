@@ -7,14 +7,15 @@
   <title></title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/layout.css">
   <script src="./js/information.js" defer></script>
+  <script src="./js/hobby.js" defer></script>
   <script src="./js/modal.js" defer></script>
-  <script src="./js/scroll.js"></script>
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+  <script src="./js/scroll.js"></script>
 </head>
-
 
 <body class="body" id="body">
   <header class="header">
@@ -119,12 +120,30 @@
       </section>
       <section id="same">
         <h2 class="same">同じとこ探し</h2>
+        <h4 class="searchSamePoint">
+          共通点のある友達を探してみよう！<br>複数選択可！下まであるのでスクロールしてね！！
+        </h4>
+        <div class="reserch">
+          Reserch...
+        </div>
+        <div class="base">
+          <div class="baseLeft">
+            <div class="focus_square">
+              <input type="text" class="search" placeholder="絞り込む" id = "search" >
+              <div class="border"></div>
+              <div id ="searchListBox" class="searchListBox"></div>
+            </div>
+            <div class="resultBox" id="resultBox"></div>
+          </div>
+          <div class="ResearchResult" id="searchResult">
+          </div>     
+        </div>
+      </section>
+      <section>
       </section>
   </main>
-
   <footer>
 
   </footer>
 </body>
-
 </html>
